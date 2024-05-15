@@ -1,0 +1,281 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    .info__chap {
+        width: var(--content-width);
+        margin: auto;
+
+        background-color: var(--content-bg-color);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .chap__path {
+            width: 100%;
+            text-align: left;
+
+            padding: 5px 10px;
+
+            display: flex;
+            align-items: center;
+
+            color: var(--primary-color);
+        }
+        .chap__number {
+            color: #fff;
+        }
+        .comic__name {
+            width: 100%;
+            padding: 0 0 7px 10px;
+
+            text-align: left;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 500;
+
+            border-bottom: 1px solid #fff;
+            .title {
+                color: var(--primary-color);
+            }
+            .time {
+                font-size: 1.4rem;
+                font-weight: 300;
+                font-style: italic;
+            }
+        }
+        .preventive {
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding: 10px;
+
+            color: #fff;
+
+            .list__server {
+                width: 100%;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                padding: 10px;
+                .server {
+                    min-width: 78px;
+                    padding: 6px 12px;
+
+                    font-size: 1.3rem;
+                    color: #fff;
+
+                    background-color: #337ab7;
+                    border: none;
+
+                    margin-right: 6px;
+
+                    border-radius: 4px;
+
+                    &.active {
+                        background-color: #5cb85c;
+                    }
+                }
+            }
+            .error__button {
+                min-width: 86px;
+                padding: 6px 12px;
+
+                display: flex;
+                align-items: center;
+
+                color: #fff;
+                font-size: 1.5rem;
+                background-color: #f0ad4e;
+
+                border: none;
+                border-radius: 4px;
+            }
+        }
+        .chapter__nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 15px;
+            select {
+                display: inline-block;
+                padding: 0;
+                margin: 0 4px;
+
+                height: 32px;
+                border: 1px solid #ccc;
+                width: 25%;
+                background-color: #fff;
+                border-radius: 0;
+            }
+            .home__nav {
+                display: flex;
+                align-items: center;
+                margin-right: 4px;
+            }
+            .detail__nav {
+                display: flex;
+                align-items: center;
+                margin-right: 4px;
+
+                // height: 30px;
+            }
+            .chap__button {
+                display: flex;
+                align-items: center;
+
+                padding: 4px;
+
+                border: none;
+                background-color: #d9534f;
+                &.prev {
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                }
+                &.next {
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                }
+            }
+            .disable {
+                opacity: 0.5;
+            }
+            .follow__btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                padding: 6px;
+                margin-left: 4px;
+
+                font-size: 1.5rem;
+                color: #fff;
+
+                border: none;
+                border-radius: 4px;
+                background-color: #5cb85c;
+            }
+            .unfollow__btn {
+                background-color: #d9534f;
+                color: #fff;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                padding: 6px;
+                margin-left: 4px;
+
+                font-size: 1.5rem;
+
+                border: none;
+                border-radius: 4px;
+                font-size: 1.4rem;
+                line-height: 1.42857143;
+                // margin-bottom: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+    .chap__pages {
+        margin-top: 10px;
+        img {
+            min-height: 35px;
+            color: #fff;
+            border-color: #000;
+            border-image: initial;
+            border-style: none;
+            border-width: medium;
+            height: auto;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            width: auto;
+            z-index: 999;
+            position: relative;
+        }
+    }
+    .chap__footer {
+        background-color: #252525;
+        // background: none repeat scroll 0 0 #fff;
+        border-bottom: 1px solid #ecedee;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: var(--content-width);
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding-top: 5px;
+        .chap__nav--bottom {
+            display: flex;
+            flex-direction: row;
+            button {
+                pointer-events: all;
+                color: #fff;
+                background-color: #d9534f;
+                border-color: #d43f3a;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                margin-bottom: 0;
+                margin-right: 8px;
+                padding: 6px 12px;
+
+                font-weight: 400;
+                text-align: center;
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+                cursor: pointer;
+
+                border: 1px solid transparent;
+                border-radius: 4px;
+
+                white-space: nowrap;
+
+                font-size: 14px;
+                line-height: 1.42857143;
+
+                // -ms-user-select: none;
+                // user-select: none;
+            }
+            .disable {
+                opacity: 0.5;
+            }
+        }
+        .chap__path {
+            width: 100%;
+            text-align: left;
+            padding: 10px 5px;
+
+            width: 100%;
+            text-align: left;
+
+            padding: 5px 10px;
+
+            display: flex;
+            align-items: center;
+
+            color: var(--primary-color);
+            .chap__number {
+                color: #fff;
+            }
+        }
+    }
+}

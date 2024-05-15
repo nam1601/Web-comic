@@ -1,0 +1,159 @@
+.wrapper {
+    width: var(--content-width);
+    margin: auto;
+
+    background-color: var(--content-bg-color);
+
+    padding: 15px 10px 30px 10px;
+    .path {
+        display: flex;
+        align-items: center;
+        text-align: left;
+
+        padding-bottom: 8px;
+        margin-bottom: 10px;
+        span {
+            color: #fff;
+        }
+        .title {
+            color: var(--primary-color);
+        }
+    }
+    .genre {
+        display: flex;
+        .genre__filter {
+            width: calc(100% / 3 * 2);
+            padding-right: 10px;
+            .filter {
+                width: 100%;
+
+                display: flex;
+                p {
+                    width: 25%;
+
+                    display: flex;
+                    align-items: center;
+
+                    color: #fff;
+                }
+                .selections {
+                    flex: 1;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .status {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: left;
+
+                        margin-bottom: 20px;
+                        .status__btn {
+                            min-width: 90px;
+                            display: flex;
+
+                            margin-right: 12px;
+
+                            border-radius: 5px;
+                            background: #fff;
+                            border: 1px solid #ddd;
+                            padding: 0 6px;
+                            color: #555;
+                            font-weight: 400;
+                            outline: 0;
+                            white-space: nowrap;
+                            display: block;
+                            line-height: 32px;
+                            text-decoration: none;
+                            &.active {
+                                color: #fff;
+                                border: none;
+                                background-color: #00b9f2;
+                            }
+                        }
+                    }
+                }
+                .sort {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    margin-bottom: 20px;
+                    .sort__btn {
+                        margin-right: 8px;
+                        text-decoration: none;
+
+                        width: 112px;
+                        display: inline-block;
+                        padding: 4px 2px;
+                        margin-bottom: 2px;
+
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 13px;
+                        outline: 0;
+
+                        color: #555;
+                        background: #f4f4f4;
+
+                        &.active {
+                            background-color: #f7941d;
+                            border-color: #f28809;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .list-comic {
+                display: grid;
+
+                grid-template-columns: repeat(
+                    (auto-fill, minmax(calc(100% / 12 * 2.5), 0.75fr))
+                );
+                gap: 10px;
+                margin-bottom: 3rem;
+            }
+            .pagination-wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .pagination {
+                    display: flex;
+                    list-style: none;
+                    .page-item {
+                        width: 40px;
+                        padding: 5px;
+                        margin-right: 1px;
+
+                        text-align: center;
+
+                        border: 1px solid #4c4c4c;
+
+                        font-size: 1.7rem;
+                        color: #fff;
+                        background-color: #3a3a3a;
+                        cursor: pointer;
+                        .page-link {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        &.active {
+                            background-color: var(--primary-color);
+                            border-color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+        .genre_box {
+            display: flex;
+            flex: 1;
+        }
+    }
+}

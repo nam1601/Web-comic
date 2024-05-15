@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #ff9601;
+    --content-bg-color: #252525;
+    --content-width: 1030px;
+    --text-color: #fff;
+    --header-height: 52px;
+    --search-height: 32px;
+    --nav-height: 40px;
+}
+$mobile-width: 600px;
+$tablet-width: 1024px;
+$poster-width: 400px;
+$white: #fff;
+$black: #000;
+
+$box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+$header-height: 7rem;
+$header-shrink-height: 4rem;
+$border-radius: 30px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    overflow-y: overlay;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    background-color: #1a1a1a;
+}
+@mixin flex($align-item, $justify-content) {
+    display: flex;
+    align-items: $align-item;
+    justify-content: $justify-content;
+}
+@mixin overlay {
+    background-color: rgba($color: #000000, $alpha: 0.6);
+}
+// @use './variables' as *;
+
+@mixin mobile {
+    @media only screen and (max-width: $mobile-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: $tablet-width) {
+        @content;
+    }
+}

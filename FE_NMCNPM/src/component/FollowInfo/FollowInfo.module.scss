@@ -1,0 +1,133 @@
+.wrapper {
+    width: 100%;
+    .relative {
+        position: relative !important;
+        h2 {
+            font-weight: 500;
+            border-left: 3px solid #ee2c74;
+            padding-left: 10px;
+            font-size: 2rem;
+            line-height: 1.5;
+            margin: 0 0 20px;
+            min-height: 27px;
+            text-align: left;
+        }
+        .link {
+            color: #ff9601;
+            font-size: 13px;
+            // color: #333;
+            position: absolute;
+            top: 3px;
+            right: 0;
+        }
+    }
+    .comics-followed {
+        display: block;
+        margin-bottom: 10px;
+        position: relative;
+        .table-responsive {
+            margin-bottom: 20px;
+            display: block;
+            width: 100%;
+            min-height: 0;
+            overflow-x: auto;
+            .table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                border-bottom: 1px solid #e6e6e6;
+                font-size: 14px;
+                margin-bottom: 0;
+                width: 100%;
+                max-width: 100%;
+                thead {
+                    display: table-header-group;
+                    vertical-align: middle;
+                    border-color: inherit;
+                }
+                th {
+                    vertical-align: bottom;
+                    padding: 0.75rem;
+                    white-space: nowrap;
+                    border-bottom: 2px solid #eceeef;
+                    text-transform: uppercase;
+                    border: none;
+                    border-top: 2px solid #ee2c74;
+                    background: #222;
+                    color: #fff;
+                    white-space: nowrap;
+                    text-align: left;
+                }
+                .nowrap {
+                    white-space: nowrap;
+                }
+                td {
+                    padding: 0.75rem;
+                    vertical-align: top;
+                    border-bottom: 1px solid #eceeef;
+                }
+                .poster {
+                    display: block;
+                    width: 50px;
+                    max-height: 50px;
+                    overflow: hidden;
+                    line-height: 50px;
+                    vertical-align: middle;
+                }
+                .comic-name {
+                    display: flex;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+
+                    text-transform: uppercase;
+                    color: var(--primary-color);
+                    text-decoration: none;
+                    text-align: left;
+
+                    max-width: 90%;
+                    overflow: hidden;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    display: -webkit-box;
+                    text-overflow: ellipsis;
+                }
+                .follow-action {
+                    display: flex;
+
+                    button {
+                        display: flex;
+                        align-items: center;
+                        background-color: transparent;
+                        border: none;
+                        margin-top: 4px;
+                        cursor: pointer;
+                    }
+                    .read {
+                        color: #23a903;
+                        margin-right: 6px;
+                    }
+                    .unsub {
+                        color: #d9534f;
+                    }
+                }
+                .chapter {
+                    // display: flex;
+                    // flex-direction: column;
+                    text-align: left;
+                    .last-chap {
+                        float: left;
+
+                        color: #fff;
+                        font-size: 1.5rem;
+                        text-decoration: none;
+                    }
+                    .time {
+                        float: left;
+
+                        color: #999999;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
